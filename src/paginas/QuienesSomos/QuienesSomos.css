@@ -1,0 +1,58 @@
+/* QuienesSomos.css */
+
+.quienes-container {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: #1d1d1f;
+  }
+  
+  .titulo {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .divisor {
+    width: 100px;
+    margin: 0 auto 40px auto;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+  }
+  
+  .descripcion {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+  }
+  
+  .imagen {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+  
+  .info-extra {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .info-extra h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    color: #000;
+  }
+  
+  .info-extra p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
