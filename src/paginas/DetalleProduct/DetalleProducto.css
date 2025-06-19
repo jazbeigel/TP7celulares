@@ -1,51 +1,48 @@
-/* DetalleProducto.css */
-
 .detalle-container {
-    background-color: white;
-    padding: 60px 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    text-align: center;
-    color: #1d1d1f;
-  }
-  
-  .detalle-container h1 {
-    font-size: 2.8rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .detalle-container p {
-    font-size: 1.2rem;
-    margin: 10px auto;
-    max-width: 700px;
-    line-height: 1.6;
-  }
-  
-  .price {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #0071e3; /* Apple blue */
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .detalle-imgs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .detalle-imgs img {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .detalle-imgs img:hover {
-    transform: scale(1.03);
-  }
-  
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.foto-ancha {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  margin-bottom: 1.5rem;
+}
+
+.info-detalle {
+  margin-bottom: 2rem;
+}
+
+.info-detalle h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  color: #1A1A6E;
+}
+
+.info-detalle p {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #D6336C;
+}
+
+.foto-normal {
+  width: 50%;
+  max-width: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 auto 2rem auto;
+  display: block;
+}
