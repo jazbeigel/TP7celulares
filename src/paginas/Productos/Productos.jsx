@@ -1,23 +1,27 @@
 import './Productos.css';
-import CelularCard from '../../componentes/CelularCard/CelularCard.jsx';
-import { celulares } from '../../data.js';
+import ProductoCard from '../../componentes/ProductoCard/ProductoCard.jsx';
+import { productos } from '../../data.js';
 import { useState } from 'react';
 
-
 export default function Productos() {
-  const [filtrados, setFiltrados] = useState(celulares);
+  const [filtrados, setFiltrados] = useState(productos);
 
-  const mostrarTodos = () => {
-    setFiltrados(celulares);
+  const mostrarIphones = () => {
+    const iphones = productos.filter(p => p.producto.toLocaleLowerCase() === "iphone");
+    setFiltrados(iphones);
   };
 
-  const filtrarNuevos = () => {
-    const nuevos = celulares.filter(c => Number(c.año) >= 2023);
-    setFiltrados(nuevos);
+  const mostrarComputadoras = () => {
+    const computadoras = productos.filter(p => p.producto.toLocaleLowerCase() === "computadora");
+    setFiltrados(computadoras);
   };
+
+  const mostrarTodo = () => {
+    setFiltrados(productos);
+  };
+
   return (
     <>
-      {/* Sección blanca a pantalla completa */}
       <div className="productos-container">
         <div className="productos-inner">
           <h1 className="productos-titulo">Productos</h1>
@@ -46,15 +50,15 @@ export default function Productos() {
         </div>
       </div>
 
-       {/* BOTONES DE FILTRO */}
-       <div className="filtros">
-          <button onClick={mostrarTodos}>Mostrar todos</button>
-          <button onClick={filtrarNuevos}>Lo más nuevo (2023-2025)</button>
-        </div>
+      <div className="filtros">
+        <button onClick={mostrarIphones}>Iphones</button>
+        <button onClick={mostrarComputadoras}>Computadoras</button>
+        <button onClick={mostrarTodo}>Todo</button>
+      </div>
 
-        <div className="productos-grid">
-          {filtrados.map(c => <CelularCard key={c.id} celular={c} />)}
-        </div>
+      <div className="productos-grid">
+        {filtrados.map(p => <ProductoCard key={p.id} producto={p} />)}
+      </div>
     </>
   );
 }

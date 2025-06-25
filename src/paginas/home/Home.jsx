@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import CelularCard from '../../componentes/CelularCard/CelularCard.jsx';
-import { celulares } from '../../data.js';
+import ProductoCard from '../../componentes/ProductoCard/ProductoCard.jsx';
+import { productos } from '../../data.js';
 import './Home.css';
 
 export default function Home() {
-  const [randomCelulares, setRandomCelulares] = useState([]);
+  const [productosRandom, setProductosRandom] = useState([]);
 
   useEffect(() => {
-    const celularesMezclados = [...celulares].sort(() => 0.5 - Math.random());
-    setRandomCelulares(celularesMezclados.slice(0, 6)); 
+    const productosMezclados = [...productos].sort(() => 0.5 - Math.random());
+    setProductosRandom(productosMezclados.slice(0, 6)); 
   }, []);
 
   const videosCarousel = [
@@ -28,7 +28,7 @@ export default function Home() {
         infiniteLoop
         showThumbs={false}
         showStatus={false}
-        interval={6000} //tarde mucho en ir a la otra slide dle carrusel
+        interval={6000}
         className="carousel"
         showArrows={false}
       >
@@ -47,11 +47,11 @@ export default function Home() {
       </Carousel>
 
       <h1 className="home-title">Bienvenido a Apple</h1>
-      <p className="home-subtitle">Explorá nuestros iPhones destacados</p>
+      <p className="home-subtitle">Explorá nuestros productos destacados</p>
 
       <div className="grid-home">
-        {randomCelulares.map(c => (
-          <CelularCard key={c.id} celular={c} />
+        {productosRandom.map(p => (
+          <ProductoCard key={p.id} producto={p} />
         ))}
       </div>
     </div>
