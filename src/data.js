@@ -1,3 +1,6 @@
+import XS from './assets/XS.png';
+import Iphone13 from './assets/Iphone13.png';
+
 export const celulares = [
   {
     id: 7,
@@ -7,8 +10,9 @@ export const celulares = [
     marca: 'Apple',
     fotos: [
       'https://i.blogs.es/e77f89/nuevos-iphone-xs/1366_521.jpg', //img home (la anhcha)
-      'https://m.media-amazon.com/images/I/61k3k4QZftL.jpg'
-    ]
+      XS
+    ],
+    año: '2019'
   },
   {
     id: 6,
@@ -19,7 +23,8 @@ export const celulares = [
     fotos: [
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJldkZyVB4jJumdeaohIMDfFakAgD9msYWIA&s', //img home (la anhcha)
       'https://m.media-amazon.com/images/I/61G2REmnBIL._AC_SL1348_.jpg'
-  ]
+  ],
+  año: '2020'
   },
   {
     id: 5,
@@ -30,7 +35,8 @@ export const celulares = [
     fotos: [
       'https://lamanzanamordida.net/app/uploads-lamanzanamordida.net/2020/07/iPhone-12-render.jpg', //img home (la anhcha)
       'https://cf5.certideal.com/24099-prod_large/iphone-12-128-gb-bianco.jpg'
-  ]
+  ],
+  año: '2021'
   },
   {
     id: 1,
@@ -40,8 +46,9 @@ export const celulares = [
     marca: 'Apple',
     fotos: [
       'https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_design_09142021.jpg.og.jpg?202505081801', //img home (la anhcha)
-      'https://m.media-amazon.com/images/I/71jHXolW9yL.jpg'
-    ]
+       Iphone13
+    ],
+    año: '2022'
   },
   {
       id: 2,
@@ -52,7 +59,8 @@ export const celulares = [
       fotos: [
         'https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907_Full-Bleed-Image.jpg.large.jpg', //img home (la anhcha)
         'https://www.apple.com/newsroom/images/product/iphone/geo/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-deep-purple-220907-geo_inline.jpg.large.jpg'
-      ]
+      ],
+      año: '2023'
     },
     {
       id: 3,
@@ -63,7 +71,8 @@ export const celulares = [
       fotos: [
         'https://www.apple.com/v/iphone-16-pro/f/images/overview/product-stories/design/ANIM/design_hero_endframe__f4saxkdyib2a_xlarge.jpg', //img home (la anhcha)
         'https://arolzpkrjp.cloudimg.io/v7/www.tiendainicio.com/wp-content/uploads/2024/11/iphone_16pro_desert.jpg'
-      ]
+      ],
+      año: '2024'
     },
     {
       id: 4,
@@ -74,7 +83,8 @@ export const celulares = [
       fotos: [
         'https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-240909-lp.jpg.landing-big_2x.jpg', //img home (la anhcha)
         'https://arolzpkrjp.cloudimg.io/v7/www.tiendainicio.com/wp-content/uploads/2024/11/iphone_16pro_desert.jpg'
-      ]
+      ],
+      año: '2025'
     }
   ];
   

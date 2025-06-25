@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import CelularCard from '../../componentes/CelularCard.jsx';
+import CelularCard from '../../componentes/CelularCard/CelularCard.jsx';
 import { celulares } from '../../data.js';
 import './Home.css';
 
@@ -46,7 +46,7 @@ export default function Home() {
         ))}
       </Carousel>
 
-      <h1 className="home-title">Bienvenido a MiApple</h1>
+      <h1 className="home-title">Bienvenido a Apple</h1>
       <p className="home-subtitle">Explorá nuestros iPhones destacados</p>
 
       <div className="grid-home">
